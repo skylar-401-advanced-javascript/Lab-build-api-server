@@ -52,7 +52,7 @@ users.statics.createFromOauth = function(email) {
 
 users.statics.authenticateToken = function(token) {
   
-  if ( usedTokens.has(token ) ) {
+  if ( usedTokens.has(token) ) {
     return Promise.reject('Invalid Token');
   }
   
